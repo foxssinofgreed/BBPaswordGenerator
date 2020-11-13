@@ -1,6 +1,11 @@
 #!/bin/python3
 
 import random
+import cgitb
+
+cgitb.enable()
+
+start_response('200 OK', [('Content-Type', 'text/html')])
 
 print('''
 BB Password Generator
